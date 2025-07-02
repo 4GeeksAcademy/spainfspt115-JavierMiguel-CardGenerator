@@ -35,18 +35,11 @@ const GenerateNewCard = function () {
 
 //load function generate New Card
 window.onload = function CardGenerator() {
-  //write your code here
-
-  GenerateNewCard();
-
-};
-
-
-// events For Button and resize inputs
-document.addEventListener("DOMContentLoaded", () => {
-
-  card.suits.forEach(suit => cardHtml.classList.remove(suit));
   
+  //write your code here
+  GenerateNewCard();
+  
+  // Button and Resize Challenge
   generateBtn.addEventListener("click", GenerateNewCard);
 
   inputWidth.addEventListener("input", () => {
@@ -55,6 +48,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   inputHeight.addEventListener("input", () => {
     cardHtml.style.height = inputHeight.value + "px";
-  });  
+  });
+  
+  //Timer Challenge
+  setInterval(GenerateNewCard, 10000);
 
-});
+
+};
