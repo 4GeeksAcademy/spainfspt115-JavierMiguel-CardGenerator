@@ -17,6 +17,23 @@
   <!-- Write your HTML code here, you can delete everything withing the body tags -->
 
 
+  <!-- Challenges button and resize -->
+  <div class="mb-4 bg-white p-3 rounded shadow d-flex gap-3 align-items-center">
+
+    <button id="generateBtn" class="btn btn-primary">Generate Card</button>
+
+    <div class="d-flex flex-column">
+      <label for="inputWidth" class="form-label mb-1">Width</label>
+      <input type="number" id="inputWidth" class="form-control" value="192"/>
+    </div>
+
+    <div class="d-flex flex-column">
+      <label for="inputHeight" class="form-label mb-1">Heigth</label>
+      <input type="number" id="inputHeight" class="form-control" value="288"/>
+    </div>
+
+  </div>
+
   <!-- Card Bootstrap with id for JS -->
   <div id="pokerCard" class="card text-center rounded-4 position-relative" style="width: 12rem; height: 18rem;">
 
